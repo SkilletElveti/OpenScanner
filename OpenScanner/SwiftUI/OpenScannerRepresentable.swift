@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 public struct OpenScannerRepresentable: UIViewRepresentable {
+    
     public var documentImageHandler: (([UIImage]) -> ())?
     public var documentScannerErrorHandler: ((Error) -> ())?
     public var documentScannerCancelHandler: (() -> ())?
@@ -43,15 +44,23 @@ extension OpenScannerRepresentable {
         }
         
         public func openScanner(_ documentImages: [UIImage]) {
-            
+            guard let openScanner = parent,
+                  let documentImageHandler = openScanner.documentImageHandler else { return }
+            documentImageHandler(documentImages)
         }
         
         public func openScannerDidPressCancel() {
-            
+            guard let openScanner = parent,
+                  let documentScannerCancelHandler = openScanner.documentScannerCancelHandler
+            else { return }
+            documentScannerCancelHandler()
         }
         
         public func openScanner(_ didFailWithError: Error) {
-            
+            guard let openScanner = parent,
+                  let documentScannerErrorHandler = openScanner.documentScannerErrorHandler
+            else { return }
+            documentScannerErrorHandler(didFailWithError)
         }
         
     }
