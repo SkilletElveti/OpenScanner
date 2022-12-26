@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-public struct OpenScannerRepresentable<Content: View>: UIViewRepresentable {
+public struct OpenScannerRepresentable: UIViewRepresentable {
     public var documentImageHandler: (([UIImage]) -> ())?
     public var documentScannerErrorHandler: ((Error) -> ())?
     public var documentScannerCancelHandler: (() -> ())?

@@ -6,14 +6,28 @@
 //
 
 import SwiftUI
-
+import OpenScanner
 struct ContentView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            OpenScannerRepresentable(
+                documentImageHandler: {
+                    (Images) in
+                    print("Images Received \(Images)")
+                },
+                documentScannerErrorHandler: {
+                    (error) in
+                },
+                documentScannerCancelHandler: {
+                    print("Cancelled")
+                }
+            ).frame(
+                width: UIScreen.main.bounds.width,
+                height: UIScreen.main.bounds.height * 0.7
+            )
         }
         .padding()
     }
