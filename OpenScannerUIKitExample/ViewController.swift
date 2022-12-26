@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let scanner = VissionView(self.containerView.frame)
+        let scanner = VisionView(self.containerView.frame)
         scanner.delegate = self
         self.containerView.addSubview(scanner)
         scanner.frame = self.containerView.bounds

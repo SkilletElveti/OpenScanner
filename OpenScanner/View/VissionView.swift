@@ -9,7 +9,7 @@ import Foundation
 import Vision
 import VisionKit
 
-public class VissionView: UIView {
+public class VisionView: UIView {
     private var vissionVC: VNDocumentCameraViewController?
     private var inferenceService: InferenceService?
     public var delegate: OpenScannerDelegate? {

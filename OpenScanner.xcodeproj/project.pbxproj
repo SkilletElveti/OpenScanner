@@ -26,6 +26,16 @@
 		888B921729590A1900D20896 /* InferenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B921629590A1900D20896 /* InferenceService.swift */; };
 		888B921929590D1F00D20896 /* OpenScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B921829590D1F00D20896 /* OpenScannerDelegate.swift */; };
 		888B921B295915A600D20896 /* ViewController + OpenScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B921A295915A600D20896 /* ViewController + OpenScannerDelegate.swift */; };
+		888B921F2959227900D20896 /* OpenScannerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B921E2959227900D20896 /* OpenScannerRepresentable.swift */; };
+		888B92282959294200D20896 /* OpenScannerSwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B92272959294200D20896 /* OpenScannerSwiftUIExampleApp.swift */; };
+		888B922A2959294200D20896 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B92292959294200D20896 /* ContentView.swift */; };
+		888B922C2959294300D20896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 888B922B2959294300D20896 /* Assets.xcassets */; };
+		888B922F2959294300D20896 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 888B922E2959294300D20896 /* Preview Assets.xcassets */; };
+		888B92392959294300D20896 /* OpenScannerSwiftUIExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B92382959294300D20896 /* OpenScannerSwiftUIExampleTests.swift */; };
+		888B92432959294300D20896 /* OpenScannerSwiftUIExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B92422959294300D20896 /* OpenScannerSwiftUIExampleUITests.swift */; };
+		888B92452959294300D20896 /* OpenScannerSwiftUIExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B92442959294300D20896 /* OpenScannerSwiftUIExampleUITestsLaunchTests.swift */; };
+		888B924F2959298E00D20896 /* OpenScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888B91BF2958F9DA00D20896 /* OpenScanner.framework */; };
+		888B92502959298E00D20896 /* OpenScanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 888B91BF2958F9DA00D20896 /* OpenScanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +67,27 @@
 			remoteGlobalIDString = 888B91BE2958F9DA00D20896;
 			remoteInfo = OpenScanner;
 		};
+		888B92352959294300D20896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 888B91B62958F9DA00D20896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 888B92242959294200D20896;
+			remoteInfo = OpenScannerSwiftUIExample;
+		};
+		888B923F2959294300D20896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 888B91B62958F9DA00D20896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 888B92242959294200D20896;
+			remoteInfo = OpenScannerSwiftUIExample;
+		};
+		888B92512959298E00D20896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 888B91B62958F9DA00D20896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 888B91BE2958F9DA00D20896;
+			remoteInfo = OpenScanner;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,6 +98,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				888B92112959007900D20896 /* OpenScanner.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888B92532959298E00D20896 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				888B92502959298E00D20896 /* OpenScanner.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +138,17 @@
 		888B921629590A1900D20896 /* InferenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InferenceService.swift; sourceTree = "<group>"; };
 		888B921829590D1F00D20896 /* OpenScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenScannerDelegate.swift; sourceTree = "<group>"; };
 		888B921A295915A600D20896 /* ViewController + OpenScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + OpenScannerDelegate.swift"; sourceTree = "<group>"; };
+		888B921E2959227900D20896 /* OpenScannerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenScannerRepresentable.swift; sourceTree = "<group>"; };
+		888B92252959294200D20896 /* OpenScannerSwiftUIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenScannerSwiftUIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		888B92272959294200D20896 /* OpenScannerSwiftUIExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenScannerSwiftUIExampleApp.swift; sourceTree = "<group>"; };
+		888B92292959294200D20896 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		888B922B2959294300D20896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		888B922E2959294300D20896 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		888B92342959294300D20896 /* OpenScannerSwiftUIExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenScannerSwiftUIExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		888B92382959294300D20896 /* OpenScannerSwiftUIExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenScannerSwiftUIExampleTests.swift; sourceTree = "<group>"; };
+		888B923E2959294300D20896 /* OpenScannerSwiftUIExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenScannerSwiftUIExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		888B92422959294300D20896 /* OpenScannerSwiftUIExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenScannerSwiftUIExampleUITests.swift; sourceTree = "<group>"; };
+		888B92442959294300D20896 /* OpenScannerSwiftUIExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenScannerSwiftUIExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +189,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		888B92222959294200D20896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888B924F2959298E00D20896 /* OpenScanner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888B92312959294300D20896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888B923B2959294300D20896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -147,6 +222,9 @@
 				888B91E02959006C00D20896 /* OpenScannerUIKitExample */,
 				888B91F72959006D00D20896 /* OpenScannerUIKitExampleTests */,
 				888B92012959006D00D20896 /* OpenScannerUIKitExampleUITests */,
+				888B92262959294200D20896 /* OpenScannerSwiftUIExample */,
+				888B92372959294300D20896 /* OpenScannerSwiftUIExampleTests */,
+				888B92412959294300D20896 /* OpenScannerSwiftUIExampleUITests */,
 				888B91C02958F9DA00D20896 /* Products */,
 				888B920F2959007900D20896 /* Frameworks */,
 			);
@@ -160,6 +238,9 @@
 				888B91DF2959006C00D20896 /* OpenScannerUIKitExample.app */,
 				888B91F42959006D00D20896 /* OpenScannerUIKitExampleTests.xctest */,
 				888B91FE2959006D00D20896 /* OpenScannerUIKitExampleUITests.xctest */,
+				888B92252959294200D20896 /* OpenScannerSwiftUIExample.app */,
+				888B92342959294300D20896 /* OpenScannerSwiftUIExampleTests.xctest */,
+				888B923E2959294300D20896 /* OpenScannerSwiftUIExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,11 +248,12 @@
 		888B91C12958F9DA00D20896 /* OpenScanner */ = {
 			isa = PBXGroup;
 			children = (
+				888B9220295923B900D20896 /* SwiftUI */,
+				888B921D2959211E00D20896 /* Delegate */,
+				888B921C2959210700D20896 /* View */,
 				888B9215295909FA00D20896 /* Services */,
 				888B91C22958F9DA00D20896 /* OpenScanner.h */,
 				888B91C32958F9DA00D20896 /* OpenScanner.docc */,
-				888B91D92958FA6E00D20896 /* VissionView.swift */,
-				888B921829590D1F00D20896 /* OpenScannerDelegate.swift */,
 			);
 			path = OpenScanner;
 			sourceTree = "<group>";
@@ -229,6 +311,66 @@
 				888B921629590A1900D20896 /* InferenceService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		888B921C2959210700D20896 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				888B91D92958FA6E00D20896 /* VissionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		888B921D2959211E00D20896 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				888B921829590D1F00D20896 /* OpenScannerDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		888B9220295923B900D20896 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				888B921E2959227900D20896 /* OpenScannerRepresentable.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		888B92262959294200D20896 /* OpenScannerSwiftUIExample */ = {
+			isa = PBXGroup;
+			children = (
+				888B92272959294200D20896 /* OpenScannerSwiftUIExampleApp.swift */,
+				888B92292959294200D20896 /* ContentView.swift */,
+				888B922B2959294300D20896 /* Assets.xcassets */,
+				888B922D2959294300D20896 /* Preview Content */,
+			);
+			path = OpenScannerSwiftUIExample;
+			sourceTree = "<group>";
+		};
+		888B922D2959294300D20896 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				888B922E2959294300D20896 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		888B92372959294300D20896 /* OpenScannerSwiftUIExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				888B92382959294300D20896 /* OpenScannerSwiftUIExampleTests.swift */,
+			);
+			path = OpenScannerSwiftUIExampleTests;
+			sourceTree = "<group>";
+		};
+		888B92412959294300D20896 /* OpenScannerSwiftUIExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				888B92422959294300D20896 /* OpenScannerSwiftUIExampleUITests.swift */,
+				888B92442959294300D20896 /* OpenScannerSwiftUIExampleUITestsLaunchTests.swift */,
+			);
+			path = OpenScannerSwiftUIExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +478,61 @@
 			productReference = 888B91FE2959006D00D20896 /* OpenScannerUIKitExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		888B92242959294200D20896 /* OpenScannerSwiftUIExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 888B92462959294300D20896 /* Build configuration list for PBXNativeTarget "OpenScannerSwiftUIExample" */;
+			buildPhases = (
+				888B92212959294200D20896 /* Sources */,
+				888B92222959294200D20896 /* Frameworks */,
+				888B92232959294200D20896 /* Resources */,
+				888B92532959298E00D20896 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				888B92522959298E00D20896 /* PBXTargetDependency */,
+			);
+			name = OpenScannerSwiftUIExample;
+			productName = OpenScannerSwiftUIExample;
+			productReference = 888B92252959294200D20896 /* OpenScannerSwiftUIExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		888B92332959294300D20896 /* OpenScannerSwiftUIExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 888B92492959294300D20896 /* Build configuration list for PBXNativeTarget "OpenScannerSwiftUIExampleTests" */;
+			buildPhases = (
+				888B92302959294300D20896 /* Sources */,
+				888B92312959294300D20896 /* Frameworks */,
+				888B92322959294300D20896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				888B92362959294300D20896 /* PBXTargetDependency */,
+			);
+			name = OpenScannerSwiftUIExampleTests;
+			productName = OpenScannerSwiftUIExampleTests;
+			productReference = 888B92342959294300D20896 /* OpenScannerSwiftUIExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		888B923D2959294300D20896 /* OpenScannerSwiftUIExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 888B924C2959294300D20896 /* Build configuration list for PBXNativeTarget "OpenScannerSwiftUIExampleUITests" */;
+			buildPhases = (
+				888B923A2959294300D20896 /* Sources */,
+				888B923B2959294300D20896 /* Frameworks */,
+				888B923C2959294300D20896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				888B92402959294300D20896 /* PBXTargetDependency */,
+			);
+			name = OpenScannerSwiftUIExampleUITests;
+			productName = OpenScannerSwiftUIExampleUITests;
+			productReference = 888B923E2959294300D20896 /* OpenScannerSwiftUIExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -363,6 +560,17 @@
 						CreatedOnToolsVersion = 14.0.1;
 						TestTargetID = 888B91DE2959006C00D20896;
 					};
+					888B92242959294200D20896 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					888B92332959294300D20896 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 888B92242959294200D20896;
+					};
+					888B923D2959294300D20896 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 888B92242959294200D20896;
+					};
 				};
 			};
 			buildConfigurationList = 888B91B92958F9DA00D20896 /* Build configuration list for PBXProject "OpenScanner" */;
@@ -383,6 +591,9 @@
 				888B91DE2959006C00D20896 /* OpenScannerUIKitExample */,
 				888B91F32959006D00D20896 /* OpenScannerUIKitExampleTests */,
 				888B91FD2959006D00D20896 /* OpenScannerUIKitExampleUITests */,
+				888B92242959294200D20896 /* OpenScannerSwiftUIExample */,
+				888B92332959294300D20896 /* OpenScannerSwiftUIExampleTests */,
+				888B923D2959294300D20896 /* OpenScannerSwiftUIExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -426,6 +637,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		888B92232959294200D20896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888B922F2959294300D20896 /* Preview Assets.xcassets in Resources */,
+				888B922C2959294300D20896 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888B92322959294300D20896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888B923C2959294300D20896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -435,6 +669,7 @@
 			files = (
 				888B91C42958F9DA00D20896 /* OpenScanner.docc in Sources */,
 				888B921729590A1900D20896 /* InferenceService.swift in Sources */,
+				888B921F2959227900D20896 /* OpenScannerRepresentable.swift in Sources */,
 				888B91DA2958FA6E00D20896 /* VissionView.swift in Sources */,
 				888B921929590D1F00D20896 /* OpenScannerDelegate.swift in Sources */,
 			);
@@ -476,6 +711,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		888B92212959294200D20896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888B922A2959294200D20896 /* ContentView.swift in Sources */,
+				888B92282959294200D20896 /* OpenScannerSwiftUIExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888B92302959294300D20896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888B92392959294300D20896 /* OpenScannerSwiftUIExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888B923A2959294300D20896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888B92452959294300D20896 /* OpenScannerSwiftUIExampleUITestsLaunchTests.swift in Sources */,
+				888B92432959294300D20896 /* OpenScannerSwiftUIExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -498,6 +759,21 @@
 			isa = PBXTargetDependency;
 			target = 888B91BE2958F9DA00D20896 /* OpenScanner */;
 			targetProxy = 888B92122959007900D20896 /* PBXContainerItemProxy */;
+		};
+		888B92362959294300D20896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 888B92242959294200D20896 /* OpenScannerSwiftUIExample */;
+			targetProxy = 888B92352959294300D20896 /* PBXContainerItemProxy */;
+		};
+		888B92402959294300D20896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 888B92242959294200D20896 /* OpenScannerSwiftUIExample */;
+			targetProxy = 888B923F2959294300D20896 /* PBXContainerItemProxy */;
+		};
+		888B92522959298E00D20896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 888B91BE2958F9DA00D20896 /* OpenScanner */;
+			targetProxy = 888B92512959298E00D20896 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -863,6 +1139,140 @@
 			};
 			name = Release;
 		};
+		888B92472959294300D20896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OpenScannerSwiftUIExample/Preview Content\"";
+				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.open.OpenScannerSwiftUIExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		888B92482959294300D20896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OpenScannerSwiftUIExample/Preview Content\"";
+				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.open.OpenScannerSwiftUIExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		888B924A2959294300D20896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.open.OpenScannerSwiftUIExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenScannerSwiftUIExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenScannerSwiftUIExample";
+			};
+			name = Debug;
+		};
+		888B924B2959294300D20896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.open.OpenScannerSwiftUIExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenScannerSwiftUIExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenScannerSwiftUIExample";
+			};
+			name = Release;
+		};
+		888B924D2959294300D20896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.open.OpenScannerSwiftUIExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenScannerSwiftUIExample;
+			};
+			name = Debug;
+		};
+		888B924E2959294300D20896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.open.OpenScannerSwiftUIExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenScannerSwiftUIExample;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -916,6 +1326,33 @@
 			buildConfigurations = (
 				888B920D2959006E00D20896 /* Debug */,
 				888B920E2959006E00D20896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		888B92462959294300D20896 /* Build configuration list for PBXNativeTarget "OpenScannerSwiftUIExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				888B92472959294300D20896 /* Debug */,
+				888B92482959294300D20896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		888B92492959294300D20896 /* Build configuration list for PBXNativeTarget "OpenScannerSwiftUIExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				888B924A2959294300D20896 /* Debug */,
+				888B924B2959294300D20896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		888B924C2959294300D20896 /* Build configuration list for PBXNativeTarget "OpenScannerSwiftUIExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				888B924D2959294300D20896 /* Debug */,
+				888B924E2959294300D20896 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
