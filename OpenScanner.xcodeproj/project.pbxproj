@@ -36,6 +36,7 @@
 		888B92452959294300D20896 /* OpenScannerSwiftUIExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B92442959294300D20896 /* OpenScannerSwiftUIExampleUITestsLaunchTests.swift */; };
 		888B924F2959298E00D20896 /* OpenScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888B91BF2958F9DA00D20896 /* OpenScanner.framework */; };
 		888B92502959298E00D20896 /* OpenScanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 888B91BF2958F9DA00D20896 /* OpenScanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		888B92552959335C00D20896 /* OpenScannerRepresentable + Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B92542959335C00D20896 /* OpenScannerRepresentable + Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 		888B923E2959294300D20896 /* OpenScannerSwiftUIExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenScannerSwiftUIExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		888B92422959294300D20896 /* OpenScannerSwiftUIExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenScannerSwiftUIExampleUITests.swift; sourceTree = "<group>"; };
 		888B92442959294300D20896 /* OpenScannerSwiftUIExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenScannerSwiftUIExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		888B92542959335C00D20896 /* OpenScannerRepresentable + Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenScannerRepresentable + Coordinator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				888B921E2959227900D20896 /* OpenScannerRepresentable.swift */,
+				888B92542959335C00D20896 /* OpenScannerRepresentable + Coordinator.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -669,6 +672,7 @@
 			files = (
 				888B91C42958F9DA00D20896 /* OpenScanner.docc in Sources */,
 				888B921729590A1900D20896 /* InferenceService.swift in Sources */,
+				888B92552959335C00D20896 /* OpenScannerRepresentable + Coordinator.swift in Sources */,
 				888B921F2959227900D20896 /* OpenScannerRepresentable.swift in Sources */,
 				888B91DA2958FA6E00D20896 /* VissionView.swift in Sources */,
 				888B921929590D1F00D20896 /* OpenScannerDelegate.swift in Sources */,
