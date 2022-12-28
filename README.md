@@ -4,7 +4,7 @@ abstraction for Apple's VNDocumentCameraViewController.
 
 # Installation 
 
-At the moment you can install OpenScanner vie CocoaPods 
+At the moment you can install OpenScanner via CocoaPods 
 
 Add the following line to your podfile: 
 ```
@@ -17,6 +17,8 @@ pod install
 ```
 
 # UIKit Integration: 
+
+Import the openScanner module
 
 ```
 import OpenScanner
@@ -50,3 +52,30 @@ extension VC: OpenScannerDelegate {
     
 }
 ```
+
+# SwiftUI Integration
+
+Import the OpenScanner module 
+
+```
+import OpenScanner
+```
+
+Add the OpenScannerRepresentable view to your SwiftUI View. The representable view has callbacks of OpenScannerDelegate, implement them to get the data from the document scanner. 
+
+
+```
+OpenScannerRepresentable(
+    documentImageHandler: {
+        (Images) in
+            print("Images Received \(Images)")
+    },
+    documentScannerErrorHandler: {
+        (error) in
+    },
+    documentScannerCancelHandler: {
+        print("Cancelled")
+    }
+)
+```
+
