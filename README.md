@@ -19,5 +19,34 @@ pod install
 # UIKit Integration: 
 
 ```
+import OpenScanner
+```
 
+Add this code to your UIViewController
+
+```
+let scanner = VisionView(self.containerView.frame)
+scanner.delegate = self
+self.containerView.addSubview(scanner)
+scanner.frame = self.containerView.bounds
+```
+
+Conform your UIViewController with OpenScannerDelegate
+
+```
+extension VC: OpenScannerDelegate {
+    func openScanner(_ documentImages: [UIImage]) {
+       //UImage array retrieved
+    }
+    
+    // Remove from subview
+    func openScannerDidPressCancel() {
+        print("Cancel Pressed")
+    }
+    
+    func openScanner(_ didFailWithError: Error) {
+        print(didFailWithError)
+    }
+    
+}
 ```
