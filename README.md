@@ -38,7 +38,7 @@ Conform your UIViewController with OpenScannerDelegate
 ```
 extension VC: OpenScannerDelegate {
     func openScanner(_ documentImages: [UIImage]) {
-       //UImage array retrieved
+       //UIImage array retrieved
     }
     
     // Remove from subview
@@ -68,7 +68,7 @@ Add the OpenScannerRepresentable view to your SwiftUI View. The representable vi
 OpenScannerRepresentable(
     documentImageHandler: {
         (Images) in
-            print("Images Received \(Images)")
+         // UIImage returned
     },
     documentScannerErrorHandler: {
         (error) in
